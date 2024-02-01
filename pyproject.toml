@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "python-kafka-microservices-template"
+version = "1.0.0"
+description = "Simple microservices template using kafka on python"
+authors = ["Artem <vebulogmetra@yandex.ru>"]
+license = "Unlicense"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+kafka-python = "^2.0.2"
+fastapi = "^0.109.0"
+uvicorn = "^0.27.0.post1"
+
+
+[tool.poetry.group.dev.dependencies]
+requests = "^2.31.0"
+black = "^24.1.1"
+isort = "^5.13.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
